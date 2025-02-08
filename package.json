@@ -13,6 +13,8 @@
   "type": "commonjs",
   "main": "index.js",
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "grep": "^0.1.0",
     "parcel-bundler": "^1.12.5",
     "yes": "^1.1.1"
   },
