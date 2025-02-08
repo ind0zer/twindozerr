@@ -1,0 +1,248 @@
+body {
+  background-color: rgb(6, 6, 14);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding: 30px 50px;
+  background-color: rgb(5, 5, 11);
+  border-bottom: 3px solid rgb(12, 12, 21);
+}
+
+.header__logo {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: rgb(235, 235, 255);
+  background: radial-gradient(
+    circle,
+    rgba(235, 235, 255, 1) 49%,
+    rgba(110, 110, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__auth-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.header__auth-login {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease-in-out color;
+}
+
+.header__auth-login:hover {
+  color: rgb(142, 142, 255);
+}
+
+.header__auth-profile {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease-in-out color;
+}
+
+.header__auth-profile:hover {
+  color: rgb(142, 142, 255);
+}
+
+.header__auth-logout {
+  padding: 6px 7px;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(12, 12, 21);
+  box-shadow: none;
+  border: 0;
+  border-radius: 10px;
+}
+
+.upload {
+  padding-top: 70px;
+  display: flex;
+}
+
+.upload__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload__container-inside {
+  width: 700px;
+  height: 200px;
+  background-color: rgb(12, 12, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.upload__content {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(21, 21, 37);
+  width: 500px;
+  /* height: 130px; */
+  padding-bottom: 90px;
+  padding-left: 30px;
+  padding-top: 20px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.upload__send {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(21, 21, 37);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: white;
+}
+
+.feed {
+  padding-top: 70px;
+}
+
+.post {
+  background-color: rgb(26, 26, 46);
+  width: 630px;
+  height: 130px;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.posts__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post__details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.post__content {
+  margin-bottom: 40px;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(240, 242, 255);
+}
+
+.post__author {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(182, 194, 255);
+}
+
+.post__date {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(182, 194, 255);
+}
+
+.delete__btn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.like__btn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.post__interactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  color: #657786;
+  transition: color 0.3s;
+}
+
+.like-btn:hover {
+  color: #e0245e;
+}
+
+.like-btn.liked {
+  color: #e0245e;
+}
+
+.like-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.like-count {
+  font-size: 10px;
+}

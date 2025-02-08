@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/reset.dc9ff4e8.css">
+    <link rel="stylesheet" href="/profile.29b6accf.css">
+    <title>Профіль - indotter</title>
+  <script src="/profile.29b6accf.js"></script></head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="/" class="header__logo">indotter</a>
+        <div class="header__auth-links">
+          <button class="header__auth-logout" onclick="handleLogout()">
+            Вийти
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="profile">
+        <div class="container">
+          <div class="profile__container">
+            <div class="profile__avatar-container">
+                <label class="avatar-upload">
+                    <input type="file" id="avatar-input" accept="image/*" hidden="">
+                    <img class="profile__avatar" id="profile-avatar" src="https://placehold.jp/ffffff/ffffff/150x150.png" alt="Аватар">
+                </label>
+            </div>
+            <div class="profile__container-two">
+              <div class="profile__info-container">
+                <p class="profile__username" id="profile-username"></p>
+                <p class="profile__email" id="profile-email"></p>
+              </div>
+              <div class="profile__posts">
+                <h2 class="profile__posts-title">Мої пости</h2>
+                <ul class="profile__posts-list" id="user-posts"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/main.fb6bbcaf.js"></script>
+  </body>
+</html>
